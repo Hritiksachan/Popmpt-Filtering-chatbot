@@ -1,0 +1,162 @@
+ /* Global Styles */ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: backgroundShift 20s linear infinite;
+}
+
+/* Background Animation */
+@keyframes backgroundShift {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+.chatbot-heading {
+    color: #dcdcdc;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Chat Container */
+.chat-container {
+    width: 60%;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Chat Box */
+#chat-box {
+    height: 450px;
+    overflow-y: auto;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+/* Message Container */
+.message-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 12px;
+}
+
+/* User and Bot Messages */
+.user-message, .bot-message {
+    max-width: 75%;
+    padding: 14px 16px;
+    border-radius: 15px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* User Message */
+.user-message {
+    background: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* Bot Message */
+.bot-message {
+    background: #444;
+    color: white;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* Avatar Styling */
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Message Alignment */
+.user-align {
+    justify-content: flex-end;
+}
+
+.bot-align {
+    justify-content: flex-start;
+}
+
+/* Input and Button */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #8a2be2;
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #6a1bb0;
+}
+
+/* Bot Text Styles */
+.bot-message ul,
+.bot-message ol {
+    padding-left: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.bot-message li {
+    margin-bottom: 5px;
+}
+
+.bot-message p {
+    margin: 0.5em 0;
+    text-align: left;
+}
+
+.bot-message strong {
+    color: #ffd700;
+}
+
+.bot-message em {
+    color: #aaa;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.bot-message br {
+    margin-bottom: 5px;
+}

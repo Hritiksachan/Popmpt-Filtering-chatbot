@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriBot - Tamil Nadu Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2 class="chatbot-heading">AgriBot - Tamil Nadu Advisor</h2>
+        <div id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="clearChat()">Clear</button>
+            <button onclick="startDictation()">Speak</button>
+            <button onclick="stopSpeaking()">Stop Speaking</button>
+        </div>
+    </div>
+
+    <!-- Avatars (optional) -->
+    <img id="user-avatar" src="icon-5359553_640.webp" style="display: none;" alt="User Avatar">
+    <img id="bot-avatar" src="istockphoto-1221348467-612x612 (1).jpg" style="display: none;" alt="Bot Avatar">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
